@@ -30,9 +30,13 @@ Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove th
 
 ## Notes
 
-<div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/97f29d02a3e64087bec748c69c1f3099?sid=ddb65ef7-60ee-4e49-9d18-ab3a0541196d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-<div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/97f29d02a3e64087bec748c69c1f3099?sid=d7576c0f-1315-403d-ad0e-b3e995f79a62" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/97f29d02a3e64087bec748c69c1f3099">
+    </a>
+    <a href="https://www.loom.com/share/97f29d02a3e64087bec748c69c1f3099">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/97f29d02a3e64087bec748c69c1f3099-1479a0ec1c894ef2-full-play.gif">
+    </a>
+  </div>
 
 
 Describe any challenges encountered while building the app.
