@@ -23,11 +23,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)!
-        performSegue(withIdentifier: "showDetailSegue", sender: cell)
-    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
@@ -85,13 +80,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetailSegue" {
-            let cell = sender as! UITableViewCell
-            if let indexPath = tableView.indexPath(for: cell) {
-                let post = posts[indexPath.row]
-                let detailVC = segue.destination as! DetailViewController
-                detailVC.post = post
-            }
+        if segue.identifier == "ShowDetail",
+           let detailVC = segue.destination as? DetailViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            detailVC.post = posts[indexPath.row]
         }
     }
 }
